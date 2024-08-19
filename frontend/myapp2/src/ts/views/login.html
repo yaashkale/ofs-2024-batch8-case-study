@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- Include Oracle JET CSS and JavaScript files -->
+    <!-- <link rel="stylesheet" href="path_to_oracle_jet_css">
+    <script src="path_to_oracle_jet_js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="LoginForm">
+            <!-- Username -->
+            <oj-c-input-text id="username" value="{{username}}" label-hint="Enter Username" label-edge="inside"></oj-c-input-text>
+            <!-- Password -->
+            <oj-c-input-password id="password" value="{{password}}" label-hint="Enter Password" label-edge="inside"></oj-c-input-password>
+            <!-- Login Button -->
+            <oj-c-button type="submit" label="Login"on-oj-action="[[loginUser]]" >Login</oj-c-button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
